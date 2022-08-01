@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5036c72dbeb5d2f44944c97a4a50a7ee
+guid: 32deee5a4c27d3247922ee16a86c8dd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,10 +104,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Biker_attack3_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 4
         y: 0
         width: 19
         height: 34
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0cc038c1f9b43e499eec4da61285094
-      internalID: 1723972065
+      spriteID: e54a72e6df8e3404283fd7cb62ccee16
+      internalID: 697819007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: Biker_attack3_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 52
         y: 0
-        width: 16
-        height: 35
+        width: 19
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d7a691854d0014487fd92a1fc487c7
-      internalID: -543648095
+      spriteID: c0295dcc600a5ed43a244ed472bebc22
+      internalID: 533908506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: Biker_attack3_2
       rect:
         serializedVersion: 2
         x: 101
         y: 0
         width: 17
-        height: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,17 +160,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f963b5a82f0c4be4ca1ec168e7e1641e
-      internalID: 1424921651
+      spriteID: 7e58246d30cc71a49aa38be0d6a8c4a3
+      internalID: -941283248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: Biker_attack3_3
       rect:
         serializedVersion: 2
-        x: 148
+        x: 146
         y: 0
         width: 20
         height: 34
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6249b474df53b3c4c952af51620ffa71
-      internalID: -291892919
+      spriteID: 065bfdbb051048d4084e6ae825eb1316
+      internalID: -1347931166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_4
+      name: Biker_attack3_4
       rect:
         serializedVersion: 2
-        x: 195
+        x: 198
         y: 0
-        width: 22
-        height: 35
+        width: 29
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704a9addba635d148bff97b1f9304761
-      internalID: 2090438135
+      spriteID: cf1e8aae2c9b1d1429024bdf66677b3c
+      internalID: 1939846322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_5
+      name: Biker_attack3_5
       rect:
         serializedVersion: 2
         x: 246
         y: 0
-        width: 16
-        height: 35
+        width: 36
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +223,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a221207446d74a4e87e26690e4fa325
-      internalID: 1970251612
+      spriteID: 72995c8b140dc754c9f12c43c2694f5c
+      internalID: 1975413178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biker_attack3_6
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d98eb1d9ecefe418bbfc978de601d1
+      internalID: -661837210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biker_attack3_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50e0459e3e55b443b0c6f3db563795b
+      internalID: 819230483
       vertices: []
       indices: 
       edges: []
@@ -232,7 +274,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a37554e4a258afe42b9c8561bdd29df0
+    spriteID: 7fcf9f5e70fc9cb4c951beb80a12f393
     internalID: 0
     vertices: []
     indices: 
@@ -240,12 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_5: 1970251612
-      Walk_0: 1723972065
-      Walk_4: 2090438135
-      Walk_2: 1424921651
-      Walk_3: -291892919
-      Walk_1: -543648095
+      Biker_attack3_4: 1939846322
+      Biker_attack3_0: 697819007
+      Biker_attack3_3: -1347931166
+      Biker_attack3_6: -661837210
+      Biker_attack3_1: 533908506
+      Biker_attack3_5: 1975413178
+      Biker_attack3_7: 819230483
+      Biker_attack3_2: -941283248
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

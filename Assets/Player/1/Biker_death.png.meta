@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5036c72dbeb5d2f44944c97a4a50a7ee
+guid: fa60ffcbc6f90024ea6f8f097373846d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,10 +104,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Biker_death_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 4
         y: 0
         width: 19
         height: 34
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0cc038c1f9b43e499eec4da61285094
-      internalID: 1723972065
+      spriteID: 575872b52ff8d0344ac0e27e506ac596
+      internalID: 1746645282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: Biker_death_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 48
         y: 0
-        width: 16
-        height: 35
+        width: 25
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d7a691854d0014487fd92a1fc487c7
-      internalID: -543648095
+      spriteID: aa8557a354cbfa34cadecdba0c5d03ce
+      internalID: -1284612117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: Biker_death_2
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 17
-        height: 35
+        width: 26
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f963b5a82f0c4be4ca1ec168e7e1641e
-      internalID: 1424921651
+      spriteID: c03bcfa59e2f4ab4da98a1ecb92f819b
+      internalID: -1139966793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: Biker_death_3
       rect:
         serializedVersion: 2
-        x: 148
+        x: 144
         y: 0
-        width: 20
-        height: 34
+        width: 31
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6249b474df53b3c4c952af51620ffa71
-      internalID: -291892919
+      spriteID: 84f60470af88dc144bf26c958512367f
+      internalID: 803404382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_4
+      name: Biker_death_4
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 22
-        height: 35
+        width: 34
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704a9addba635d148bff97b1f9304761
-      internalID: 2090438135
+      spriteID: 015dba6365560b04ab5060587abbaf61
+      internalID: 81523267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_5
+      name: Biker_death_6
       rect:
         serializedVersion: 2
-        x: 246
+        x: 240
         y: 0
-        width: 16
-        height: 35
+        width: 36
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a221207446d74a4e87e26690e4fa325
-      internalID: 1970251612
+      spriteID: 68dc89d020cbbe743be27ba5d84be820
+      internalID: 1204849710
       vertices: []
       indices: 
       edges: []
@@ -232,7 +232,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a37554e4a258afe42b9c8561bdd29df0
+    spriteID: 1daf48f47d91b724389fd081e10d8a14
     internalID: 0
     vertices: []
     indices: 
@@ -240,12 +240,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_5: 1970251612
-      Walk_0: 1723972065
-      Walk_4: 2090438135
-      Walk_2: 1424921651
-      Walk_3: -291892919
-      Walk_1: -543648095
+      Biker_death_3: 803404382
+      Biker_death_4: 81523267
+      Biker_death_6: 1204849710
+      Biker_death_1: -1284612117
+      Biker_death_2: -1139966793
+      Biker_death_5: 1688872432
+      Biker_death_0: 1746645282
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
