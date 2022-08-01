@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f4dc00698467e042bda0ccfe6487517
+guid: bbd10dce089562e49811da532b9bfecd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,127 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_attack_0
+      name: NES_Adv_Gun_Idle_1_strip4_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 19
-        height: 34
+        x: 1
+        y: 1
+        width: 17
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192b1b93a39a62841a323b15cad90c56
-      internalID: -289007234
+      spriteID: 12b6094a77b2d344f92d3df30ca25bf9
+      internalID: 1468011753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_attack_1
+      name: NES_Adv_Gun_Idle_1_strip4_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 0
-        width: 19
-        height: 35
+        x: 25
+        y: 1
+        width: 17
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c448abd811fc9c4c89e4fa451183ab8
-      internalID: 187973012
+      spriteID: 05ad89db9fcb1d74d9ff522fa0d60da4
+      internalID: -1427390686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_attack_2
+      name: NES_Adv_Gun_Idle_1_strip4_2
       rect:
         serializedVersion: 2
-        x: 101
-        y: 0
-        width: 27
-        height: 35
-      alignment: 9
-      pivot: {x: 0.38388908, y: 0.5000001}
+        x: 49
+        y: 1
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cdc8eda1e262ad449709fb1f6e6ce52
-      internalID: -108813823
+      spriteID: 7d5ed905b490b3d44b5fdbe5aea1efa8
+      internalID: -492241170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_attack_3
+      name: NES_Adv_Gun_Idle_1_strip4_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 0
-        width: 23
-        height: 34
+        x: 73
+        y: 1
+        width: 17
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94e82e1f1728ce4e9ed206b16ac10b4
-      internalID: -1358677359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_4
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 0
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: facedcc5e56d8da4b9de44c8bc8bed01
-      internalID: 1839467985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_5
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 0
-        width: 16
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e9c50cceef949f4e8aeaf32bdaf8732
-      internalID: 1595311193
+      spriteID: 3c938cb1f6a15d14b8406706382177d6
+      internalID: -887966844
       vertices: []
       indices: 
       edges: []
@@ -232,7 +190,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2a6f5886d8f88f042ac13827bc76049e
+    spriteID: d344c3bec502f744ebcfe13a5dcf4bf5
     internalID: 0
     vertices: []
     indices: 
@@ -240,12 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_attack_2: -108813823
-      Walk_attack_3: -1358677359
-      Walk_attack_1: 187973012
-      Walk_attack_5: 1595311193
-      Walk_attack_4: 1839467985
-      Walk_attack_0: -289007234
+      NES_Adv_Gun_Idle_1_strip4_1: -1427390686
+      NES_Adv_Gun_Idle_1_strip4_3: -887966844
+      NES_Adv_Gun_Idle_1_strip4_0: 1468011753
+      NES_Adv_Gun_Idle_1_strip4_2: -492241170
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

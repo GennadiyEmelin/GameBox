@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f4dc00698467e042bda0ccfe6487517
+guid: f7cc0bc1d07574447b3d7b8535d09599
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_attack_0
+      name: NES_Adv_Down_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
-        width: 19
-        height: 34
+        width: 30
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,113 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192b1b93a39a62841a323b15cad90c56
-      internalID: -289007234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_1
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 0
-        width: 19
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c448abd811fc9c4c89e4fa451183ab8
-      internalID: 187973012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_2
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 0
-        width: 27
-        height: 35
-      alignment: 9
-      pivot: {x: 0.38388908, y: 0.5000001}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cdc8eda1e262ad449709fb1f6e6ce52
-      internalID: -108813823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_3
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 0
-        width: 23
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d94e82e1f1728ce4e9ed206b16ac10b4
-      internalID: -1358677359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_4
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 0
-        width: 22
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: facedcc5e56d8da4b9de44c8bc8bed01
-      internalID: 1839467985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_attack_5
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 0
-        width: 16
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e9c50cceef949f4e8aeaf32bdaf8732
-      internalID: 1595311193
+      spriteID: 80a3b19e34f086946ab51cf870b6af1d
+      internalID: 1602751218
       vertices: []
       indices: 
       edges: []
@@ -232,7 +127,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2a6f5886d8f88f042ac13827bc76049e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -240,12 +135,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_attack_2: -108813823
-      Walk_attack_3: -1358677359
-      Walk_attack_1: 187973012
-      Walk_attack_5: 1595311193
-      Walk_attack_4: 1839467985
-      Walk_attack_0: -289007234
+      NES_Adv_Down_0: 1602751218
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
