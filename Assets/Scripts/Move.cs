@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
     [SerializeField] private Transform groundCollider;
     [SerializeField] private float jumpOffset;
     [SerializeField] private LayerMask groundMask;
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -23,10 +23,11 @@ public class Move : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(overlapCirclePosition, jumpOffset, groundMask);
     }
 
-    void Update()
+    private void Update()
     {
         MovePlayer();
         Attack();
+        Jump();
     }
 
     private void MovePlayer()
@@ -63,6 +64,8 @@ public class Move : MonoBehaviour
 
     private void Attack()
     {
+        float horizontal = Input.GetAxis("Horizontal"); 
+
         float attack = Input.GetAxis("Fire1");
 
         if (attack > 0)
@@ -72,6 +75,26 @@ public class Move : MonoBehaviour
         else if (attack < 0.3)
         {
             anim.SetBool("Attack", false);
+        }
+
+        float superAttack = Input.GetAxis("Fire2");
+
+        if (superAttack > 0)
+        {
+            anim.SetBool("SuperAttack", true);
+        }
+        else if (superAttack < 0.3)
+        {
+            anim.SetBool("SuperAttack", false);
+        }
+
+        if((horizontal > 0 || horizontal < 0) & attack > 0)
+        {
+            anim.SetBool("RunAttack", true);
+        }
+        else
+        {
+            anim.SetBool("RunAttack", false);
         }
     }
 
