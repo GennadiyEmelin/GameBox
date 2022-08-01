@@ -7,6 +7,9 @@ TagManager:
   - LimitedEnemy
   - Enemy
   - Obstacle
+  - DamageAgent
+  - Hepl05
+  - Help1
   layers:
   - Default
   - TransparentFX

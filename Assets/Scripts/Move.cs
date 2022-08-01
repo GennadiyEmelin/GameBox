@@ -12,6 +12,8 @@ public class Move : MonoBehaviour
     [SerializeField] private Transform groundCollider;
     [SerializeField] private float jumpOffset;
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private GameObject attackPoint;
+    [SerializeField] private GameObject superAttackPoint;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -71,10 +73,12 @@ public class Move : MonoBehaviour
         if (attack > 0)
         {
             anim.SetBool("Attack", true);
+            attackPoint.SetActive(true);
         }
         else if (attack < 0.3)
         {
             anim.SetBool("Attack", false);
+            attackPoint.SetActive(false);
         }
 
         float superAttack = Input.GetAxis("Fire2");
@@ -82,10 +86,12 @@ public class Move : MonoBehaviour
         if (superAttack > 0)
         {
             anim.SetBool("SuperAttack", true);
+            superAttackPoint.SetActive(true);
         }
         else if (superAttack < 0.3)
         {
             anim.SetBool("SuperAttack", false);
+            superAttackPoint.SetActive(false);
         }
 
         if((horizontal > 0 || horizontal < 0) & attack > 0)
