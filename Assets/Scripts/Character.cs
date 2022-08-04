@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] private EnemyAgent _enemyAgent;
-    [SerializeField] private float lives;
+    private float lives;
+    private float money;
+    private float enemy;
     [SerializeField] private Image hp;
     void Start()
     {
@@ -16,23 +17,53 @@ public class Character : MonoBehaviour
     void Update()
     {
         hp.fillAmount = lives;
+
+        MaxLives();
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void MaxLives()
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (lives > 1f)
         {
-            gameObject.GetComponent<EnemyAgent>().Live -= 1;
+            lives = 1f;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Help1"))
+        {
+            lives += 1f;
+            Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Hepl05"))
         {
-
+            lives += 0.5f;
+            Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.GetComponent<EnemyAgent>())
+        if (collision.gameObject.CompareTag("Money"))
         {
-            lives -= 0.1f;
+            money += 1f;
+            Destroy(collision.gameObject);
         }
+    }
+
+    public float Money
+    {
+        get { return money; }
+    }
+
+    public float Lives
+    {
+        get { return lives; }
+        set { lives = value; }
+    }
+
+    public float Enemy
+    {
+        get { return enemy; }
+        set { enemy = value; }
     }
 }

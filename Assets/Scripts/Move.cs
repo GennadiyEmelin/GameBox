@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private GameObject attackPoint;
     [SerializeField] private GameObject superAttackPoint;
+    private int MaxJumps;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -108,9 +109,24 @@ public class Move : MonoBehaviour
     {
         bool jump = Input.GetButtonDown("Jump"); ;
 
-        if (isGrounded & jump)
+        if (jump & MaxJumps <= 1)
+        { 
+            if (MaxJumps == 0)
+            {
+                MaxJumps += 1;
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
+
+            if(MaxJumps == 1 & isGrounded == false)
+            {
+                MaxJumps += 1;
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
+        }
+
+        if(MaxJumps == 2 & isGrounded == true)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            MaxJumps = 0;
         }
 
         if (isGrounded == false)
