@@ -18614,7 +18614,7 @@ GameObject:
   - component: {fileID: 1177558587}
   - component: {fileID: 1177558586}
   m_Layer: 5
-  m_Name: MainMenuButton
+  m_Name: RestartGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19047,7 +19047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1204421860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21086,7 +21086,7 @@ GameObject:
   - component: {fileID: 1485982399}
   - component: {fileID: 1485982398}
   m_Layer: 5
-  m_Name: ExitButton
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
