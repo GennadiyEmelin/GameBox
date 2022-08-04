@@ -7,7 +7,7 @@ public class EnemyAgent : MonoBehaviour
     [SerializeField] private float speed, timeToRevert;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sp;
-    [SerializeField] private float lives;
+    private float lives;
     private Rigidbody2D rb;
     private const float idle_state = 0;
     private const float walk_state = 1;
@@ -18,6 +18,7 @@ public class EnemyAgent : MonoBehaviour
 
     public void Start()
     {
+        lives = 1;
         currentState = walk_state;
         currentTimeToRevert = 0;
         rb = GetComponent<Rigidbody2D>();

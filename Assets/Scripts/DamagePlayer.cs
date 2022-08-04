@@ -11,7 +11,6 @@ public class DamagePlayer : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyAgent>())
         {
             character.Lives -= 0.1f;
-            Debug.Log("Collision");
         }
     }
 }

@@ -33,6 +33,11 @@ public class Move : MonoBehaviour
         Jump();
     }
 
+    public void Animation(string animation, bool _anim)
+    {
+        anim.SetBool(animation, _anim);
+    }
+
     private void MovePlayer()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -109,18 +114,20 @@ public class Move : MonoBehaviour
     {
         bool jump = Input.GetButtonDown("Jump"); ;
 
-        if (jump & MaxJumps <= 1)
+        if (jump & MaxJumps == 0)
         { 
             if (MaxJumps == 0)
             {
                 MaxJumps += 1;
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                return;
             }
 
             if(MaxJumps == 1 & isGrounded == false)
             {
                 MaxJumps += 1;
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                return;
             }
         }
 

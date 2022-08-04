@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     private float lives;
     private float money;
     private float enemy;
+    [SerializeField] private Move move;
     [SerializeField] private Image hp;
     void Start()
     {
@@ -47,6 +48,14 @@ public class Character : MonoBehaviour
         {
             money += 1f;
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void Dead()
+    {
+        if(lives <= 0)
+        {
+            move.Animation("Death", true);
         }
     }
 
