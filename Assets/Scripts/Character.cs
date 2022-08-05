@@ -10,6 +10,10 @@ public class Character : MonoBehaviour
     private float enemy;
     [SerializeField] private Move move;
     [SerializeField] private Image hp;
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource useHelpSound;
+    [SerializeField] private AudioSource useMoneySound;
     void Start()
     {
         lives = 1f;
@@ -34,18 +38,21 @@ public class Character : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Help1"))
         {
+            useHelpSound.Play();
             lives += 1f;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Hepl05"))
         {
+            useHelpSound.Play();
             lives += 0.5f;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Money"))
         {
+            useMoneySound.Play();
             money += 1f;
             Destroy(collision.gameObject);
         }

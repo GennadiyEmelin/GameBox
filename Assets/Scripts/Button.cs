@@ -10,6 +10,7 @@ public class Button : MonoBehaviour
     [SerializeField] private Character character;
 
     [Header("Other")]
+    [SerializeField] private GameObject gamePanelInfo;
     [SerializeField] private GameObject panelDead;
     [SerializeField] private GameObject panelPause;
     [SerializeField] private Text textMoney;
@@ -27,16 +28,19 @@ public class Button : MonoBehaviour
 
     private void Update()
     {
-        timeGame = Time.timeScale;
+        timeGame += Time.deltaTime;
         textMoney.text = character.Money.ToString();
         textEnemy.text = character.Enemy.ToString();
         OnPauseButton();
         OnDeadPanel();
     }
 
-    public void OnClickGamePlayButton()
+    public void OnClikcResume()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1;
+        panelPause.SetActive(false);
+        gamePanelInfo.SetActive(true);
+        Cursor.visible = false;
     }
 
     public void OnClickExitGame()
@@ -44,8 +48,14 @@ public class Button : MonoBehaviour
         Application.Quit();
     }
 
-    public void OnRestartGame()
+    public void OnClickMainMenu()
     {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OnClickRestartGame()
+    {
+        Cursor.visible = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -55,11 +65,15 @@ public class Button : MonoBehaviour
         {
             if(panelPause.activeSelf == false)
             {
+                Cursor.visible = true;
+                gamePanelInfo.SetActive(false);
                 panelPause.SetActive(true);
                 Time.timeScale = 0;
             }
             else
             {
+                Cursor.visible = false;
+                gamePanelInfo.SetActive(true);
                 panelPause.SetActive(false);
                 Time.timeScale = 1;
             }
@@ -70,6 +84,7 @@ public class Button : MonoBehaviour
     {
         if(character.Lives <= 0)
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             panelDead.SetActive(true);
             textTimeDead.text = timeGame.ToString();

@@ -15,6 +15,9 @@ public class Move : MonoBehaviour
     [SerializeField] private GameObject attackPoint;
     [SerializeField] private GameObject superAttackPoint;
     private int MaxJumps;
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource hitNoDamage;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -78,6 +81,7 @@ public class Move : MonoBehaviour
 
         if (attack > 0)
         {
+            hitNoDamage.Play();
             anim.SetBool("Attack", true);
             attackPoint.SetActive(true);
         }
@@ -91,6 +95,7 @@ public class Move : MonoBehaviour
 
         if (superAttack > 0)
         {
+            hitNoDamage.Play();
             anim.SetBool("SuperAttack", true);
             superAttackPoint.SetActive(true);
         }
@@ -102,6 +107,7 @@ public class Move : MonoBehaviour
 
         if((horizontal > 0 || horizontal < 0) & attack > 0)
         {
+            hitNoDamage.Play();
             anim.SetBool("RunAttack", true);
         }
         else
@@ -143,6 +149,11 @@ public class Move : MonoBehaviour
         else
         {
             anim.SetBool("Jump", false);
+        }
+
+        if(MaxJumps == 1 & isGrounded)
+        {
+            MaxJumps = 0;
         }
     }
 }
